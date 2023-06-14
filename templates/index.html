@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Data Extraction</title>
+</head>
+<body>
+    <h1>Stock Data Extraction</h1>
+    <form action="/" method="POST">
+        <label for="stock_ticker">Stock Ticker:</label>
+        <input type="text" id="stock_ticker" name="stock_ticker" required><br><br>
+        
+        <label for="period_type">Period Type:</label>
+        <input type="text" id="period_type" name="period_type" required><br><br>
+        
+        <label for="statement_type">Statement Type:</label>
+        <input type="text" id="statement_type" name="statement_type" required><br><br>
+        
+        <label for="target_currency">Target Currency:</label>
+        <input type="text" id="target_currency" name="target_currency" required><br><br>
+        
+        <input type="submit" value="Extract Data">
+    </form>
+</body>
+</html>

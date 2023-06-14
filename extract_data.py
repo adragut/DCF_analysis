@@ -10,10 +10,10 @@ headers = {'X-RapidAPI-Key':'6a1269eb60msh80257fe6797736cp147a07jsnb276f98fded5'
 }
 
 # Retrieve target stock ticker and desired currency
-stock_ticker = input("Enter the target stock ticker: ")
-period_type = input("One of the following : annual|quarterly|ttm")
-statement_type = input("One of the following : income-statement|balance-sheet|cash-flow-statement")
-target_currency = input("Enter target currency: USD or e.g. EUR\n")
+stock_ticker = input()
+period_type = input()
+statement_type = input()
+target_currency = input()
 if target_currency not in ["USD", "EUR"]:
     print('Error: Invalid currency')
 else:
@@ -33,6 +33,7 @@ if response.status_code == 200:
     
     #Path JSON 
     file_path = 'C:\\Users\\alexandru.dragut\\Documents\\response.json'  # Replace with the desired file path
+    #file_path = 'response.json'  # Replace with the desired file path
 
     # Save JSON response to the specified file path
     with open(file_path, 'w') as file:
@@ -44,3 +45,4 @@ else:
 
 # Print response JSON object
 # print(response.json())
+
