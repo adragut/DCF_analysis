@@ -32,8 +32,8 @@ if response.status_code == 200:
     json_data = response.json()
     
     #Path JSON 
-    file_path = 'C:\\Users\\alexandru.dragut\\Documents\\response.json'  # Replace with the desired file path
-    #file_path = 'response.json'  # Replace with the desired file path
+    #file_path = 'C:\\Users\\alexandru.dragut\\Documents\\response.json'  # Replace with the desired file path
+    file_path = 'response.json'  # Replace with the desired file path
 
     # Save JSON response to the specified file path
     with open(file_path, 'w') as file:
