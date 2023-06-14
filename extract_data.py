@@ -36,12 +36,11 @@ if response.status_code == 200:
 
     # Save JSON response to the specified file path
     with open(file_path, 'w') as file:
-        json.dump(json_data, file)
-
-    print(f'JSON response saved to {file_path}')
+        json.dump(json_data, file, indent=4)
+        print(f'JSON response saved to {file_path}') 
 else:
     # Handle errors
     print('Unexpected status code: {}'.format(response.status_code))
 
 # Print response JSON object
-print(response.json())
+# print(response.json())
