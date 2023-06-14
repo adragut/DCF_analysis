@@ -4,6 +4,7 @@ import subprocess
 app = Flask(__name__, template_folder='./templates')
 
 @app.route('/', methods=['GET', 'POST'])
+
 def index():
     if request.method == 'POST':
         stock_ticker = request.form['stock_ticker']
